@@ -4,8 +4,7 @@ RUN apk --update add tor
 ARG ORPORT
 ARG DIRPORT
 ARG CTRPORT
-
-#EXPOSE $ORPORT $DIRPORT $CTRPORT
+ARG NAME
 
 COPY startup.sh /
 CMD ["/startup.sh"]
