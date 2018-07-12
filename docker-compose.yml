@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  tor1:
+    build: './torDocker'
+    ports:
+      - '51000:51000'
+      - '52000:52000'
+    environment:
+      ORPORT: '51000'
+      DIRPORT: '52000'
+      CTRPORT: '40000'
