@@ -11,7 +11,7 @@ func main() {
 
 services:`
 
-	max := 10
+	max := 100
 
 	key := 50010
 
